@@ -14,3 +14,11 @@ class Bird(Animal):
 b = Bird(True)
 b.eat()
 b.eat()
+class SongBird(Bird):
+    def __init__(self):
+        self.sound= '向天再借五百年'
+    def sing(self):
+        print(self.sound)
+sb=SongBird()
+sb.sing()
+sb.eat()
